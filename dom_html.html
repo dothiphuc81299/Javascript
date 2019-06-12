@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script language="javascript">
+        function set_content()
+        {
+            document.getElementById("content").innerHTML="<h1> Noi dung da thay doi </h1>";
+        }
+        function get_content()
+        {
+            var html=document.getElementById("content").innerHTML;
+            alert("Noi dung cua the div  " + html);
+        }
+        
+        </script>
+        <div id="content"></div>
+        <input type="button" value="thay doi noi dung the" id="set_content" onclick="set_content()"/>
+        <input type="button" value="lay noi dung the " id="get_content" onclick="get_content()"/>
+    </body>
+</html>
