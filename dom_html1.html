@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script language="javascript">
+        function change()
+        {
+            var object=document.getElementById("object");
+            var type=object.type;
+            if (type=="button")
+            {
+                object.type='text';
+            }
+            else
+            {
+                object.type="button";
+            }
+        }
+        </script>
+        <input type="button" value="click me" id="object" onclick="change()"/>
+    </body>
+</html>

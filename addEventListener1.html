@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="txt-val" value=""/>
+        <div id="result"></div>
+        <script language="javascript">
+        var input=document.getElementById("txt-val");
+        //them su kien 
+        input.addEventListener('keyup', function()
+        {
+            document.getElementById('result').innerHTML=input.value;
+
+        });
+        input.addEventListener('keyup',function()
+        {
+            if(input.value.length > 5)
+            {
+                alert(" Ban da nhap qua 5 chu so");
+            }
+
+        });
+        </script>
+    </body>
+</html>
