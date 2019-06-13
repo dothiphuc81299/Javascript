@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <body>
+            <div id="top" >
+                Xin chao cac ban
+            </div>
+            <input type="button" value="append" id="txt"/>
+            <script language="javascript">
+            var button=document.getElementById("txt");
+            button.addEventListener("click", function()
+            {
+                var h1=document.createElement("h1");
+                h1.innerHTML="Ahihi dongoc";
+                document.getElementById('top').appendChild(h1);
+            });
+            </script>
+
+        </body>
+    </head>
+</html>
