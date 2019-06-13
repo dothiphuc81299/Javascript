@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script language="javascript">
+        function validate()
+        {
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            var re_password=document.getElementById("re-password").value;
+            var message=document.getElementById("message");
+            if(username=="" || password=="" )
+            {
+                message.innerHTML="Ban chua nhap vao thong tin";
+                message.style.color='red';
+            }
+            else if(password!=re_password)
+            {
+                message.innerHTML="Mat khau khong dung";
+                message.style.color='yellow';
+            }
+            else
+            {
+                message.innerHTML="Ban da nhap thanh cong";
+                message.style.color='blue';
+            }
+            
+        }
+        </script>
+        
+        <div id="message"></div>
+        Username: <input type="text" value="" id="username"/> <br/>
+        Passsword: <input type="password" value="" id="password"/> <br/>
+        Re password: <input type="password" value="" id="re-password"/> <br/>
+        <input type="button" value="Login" onclick="validate()"/>
+
+
+    </body>
+</html>
