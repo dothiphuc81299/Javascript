@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="content">
+            <h5> Xin chao cac ban </h5>
+            <h5> Mình la Tam hon nhat nheo</h5>
+        </div>
+        <input type="button" value="view" id="btn"/>
+        <script language="javascript">
+        var button=document.getElementById("btn");
+        button.addEventListener("click", function()
+        {
+            var h1=document.createElement("h1");
+            h1.innerHTML=" ahihi dongoc"
+            var element=document.getElementById("content");
+            var element_child=document.getElementsByTagName("h5")[0]
+            element.insertBefore(h1,element_child);
+        });
+        </script>
+    </body>
+</html>
