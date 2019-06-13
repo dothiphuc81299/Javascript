@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="content">
+            <h5> Chuc vui ve khi hoc bai</h5>
+            <h5>ahihi do ngoc</h5>
+        </div>
+        <input type="button" value="Remove" id="btn-remove"/>
+        <script language="javascript">
+        var button=document.getElementById("btn-remove");
+        button.addEventListener("click", function()
+        {
+            var need_remove=document.getElementsByTagName("h5")[1];
+            document.getElementById("content").removeChild(need_remove);
+        });
+        </script>
+    </body>
+</html>

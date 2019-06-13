@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script language="javascript">
+            function kiem_tra_nam_nhuan(nam)
+            {
+               if(nam%100==0)
+               {
+                   if(nam%400==0)
+                   {
+                       alert(nam+ 'nam nhuan');
+                   }
+                   else{
+                       alert(nam+ 'khong phai nam nhuan');
+                   }
+               }
+               else if( nam %4==0)
+               {
+                   alert(nam + 'nam nhuan');
+               }
+               else
+               {
+                   alert(nam + 'khong phai nam nhuan');
+               }
+
+            }
+            kiem_tra_nam_nhuan(4);
+            kiem_tra_nam_nhuan(3);
+            kiem_tra_nam_nhuan(16);
+            </script>
+    </body>
+</html>

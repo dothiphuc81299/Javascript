@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="content">
+            <h5> Chuc vui ve khi hoc bai</h5>
+        </div>
+        <input type="button" value="Replace" id="btn-replace"/>
+        <script language="javascript">
+        var button=document.getElementById("btn-replace");
+        button.addEventListener("click", function()
+        {
+            var p=document.createElement("p");
+            p.innerHTML="xin chao";
+            var Replace=document.getElementsByTagName("h5")[0];
+            document.getElementById("content").replaceChild(p,Replace);
+        });
+        </script>
+    </body>
+</html>
